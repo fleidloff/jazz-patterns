@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>tuba.rs | Patterns for Music</title>
+		<!-- http://purecss.io/base/ -->
+		<link rel="stylesheet" href="https://cdn.rawgit.com/yui/pure-release/v0.5.0/pure-min.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
+
+		<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+		<script type="text/javascript" src="js/lib/abcjs_basic_latest-min.js"></script>
+		<script type="text/javascript" src="js/lib/buzz.min.js"></script>
+
+		<script type="text/javascript" src="js/Tuba.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+
+	</head>
+	<body>
+		<div id="banner" class="gradient">
+			<h1>&nbsp;Jazz Improvisation Patterns&nbsp;</h1>
+		</div>
+		<div id="navigation">
+			<form class="pure-form">
+				<span class="formGroup"> 
+					<button type="submit" class="pure-button" id="nextPatternLeft">
+						<i class="fa fa-backward"></i>
+					</button>
+					<button type="submit" class="pure-button" id="new">
+						<i class="fa fa-music"></i>
+						New
+					</button>
+					<button type="submit" class="pure-button pure-button-secondary" id="random">
+						<i class="fa fa-random"></i>
+					</button>
+					<button type="submit" class="pure-button pure-button-primary" id="nextPatternRight">
+						<i class="fa fa-forward"></i>
+					</button>
+				</span>
+
+				<span class="formGroup buttonLabelFormGroup">
+					<select id="key"></select>
+				</span>
+				<span class="formGroup">
+					<select id="scale"></select>
+				</span>
+				<span class="formGroup">
+					<label for="difficulty">Choose your Level</label> <select id="difficulty"></select>
+				</span>
+
+				<span class="formGroup">
+					<button type="submit" class="pure-button" id="wrench">
+						<i class="fa fa-wrench"></i>
+					</button>
+				</span>
+		    </form>
+		</div>
+
+		<div id="settings" class="hidden">
+			<form class="pure-form">
+				<span class="formGroup">
+					<label for="bpm">Select BPM</label> 
+					<select id="bpm"></select>
+				</span>
+		    </form>
+		</div>
+
+		<div id="notation"></div>
+
+		<div id="midi"></div>
+		<div id="footer">
+			made with <i class="fa fa-music"></i> in mind by frederik leidloff
+		</div>
+	</body>
+</html>
